@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -6,12 +6,40 @@ import { Component} from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent{
-  navOptions: boolean = false;
+
+  elements: NavElements[] = [
+    {
+      label: 'Inicio',
+      route: ''
+    },
+    {
+      label: 'Habilidades',
+      route: 'habilidades'
+    },
+    {
+      label: 'Proyectos',
+      route: 'proyectos'
+    },
+    {
+      label: 'Contacto',
+      route: 'contacto'
+    }
+  ]
+
+  navElements: boolean = false;
+  @Output() activeSidenav = new EventEmitter<boolean>()
 
   open() {
-    this.navOptions = true;
+    this.navElements = true;
+    this.activeSidenav.emit(true)
   }
   close() {
-    this.navOptions = false;
+    this.navElements = false;
+    this.activeSidenav.emit(false)
   }
+}
+
+interface NavElements {
+  label: string;
+  route: string;
 }

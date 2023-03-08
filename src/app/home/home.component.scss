@@ -1,0 +1,56 @@
+@import "../shared/variables.scss";
+@import "../shared/texts.scss";
+
+.home-container {
+    .information-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        
+        .title {
+            width: 100%;
+            text-align: center;
+            margin: 25px 0 0.2rem 0;
+            @include texts(1.6rem, black, 700);
+        }
+        hr {
+            width: 75vw;
+            height: 3px;
+            border: none;
+            margin-bottom: 0.2rem;
+            background-color: $colorDarkBlue;
+        }
+        .subtitle {
+            width: 100%;
+            text-align: center;
+            @include texts(1rem, $colorBlue, 500);
+        }
+        .text {
+            padding: 0 2rem;
+            text-align: center;
+            margin-bottom: 1.7rem;
+            @include texts(0.8rem, black, 400);
+            span {
+                color: $colorBlue;
+            }
+        }
+        .social-media-icons {
+            display: flex;
+            gap: 1rem;
+            a {
+                img {
+                    width: 15vw;
+                }
+            }
+        }
+    }
+    .illustration-container {
+        display: flex;
+        margin-bottom: 3rem;
+        justify-content: center;
+        img {
+            width: 75vw;
+        }
+    }
+}

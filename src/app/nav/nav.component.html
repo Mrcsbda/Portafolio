@@ -1,7 +1,7 @@
 <div
   class="nav-mobile-container"
-  [class.theme1]="!navOptions"
-  [class.theme2]="navOptions"
+  [class.theme1]="!navElements"
+  [class.theme2]="navElements"
 >
   <div class="nav">
     <div class="open-button" (click)="open()">
@@ -10,18 +10,21 @@
       <div class="line3"></div>
     </div>
     <div class="close-button" (click)="close()">
-      <img src="../../assets/nav/close.svg" alt="close button">
+      <img src="../../assets/nav/close.svg" alt="close button" />
     </div>
     <div class="logo-container">
-      <img class="logo" src="../../assets/nav/logo.svg" alt="logo">
+      <img class="logo" src="../../assets/nav/logo.svg" alt="logo" />
     </div>
   </div>
-  <div class="nav-options">
+  <div class="nav-elements">
     <ul>
-      <li routerLink="" (click)="close()">inicio</li>
-      <li routerLink="habilidades" (click)="close()">habilidades</li>
-      <li routerLink="proyectos" (click)="close()">proyectos</li>
-      <li routerLink="contacto" (click)="close()">contacto</li>
+      <li
+        *ngFor="let item of elements"
+        [routerLink]="item.route"
+        (click)="close()"
+      >
+        {{ item.label }}
+      </li>
     </ul>
   </div>
 </div>

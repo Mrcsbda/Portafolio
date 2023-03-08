@@ -1,6 +1,6 @@
 <div>
-  <app-nav></app-nav>
-  <main>
+  <app-nav (activeSidenav)="getActiveSidenav($event)"></app-nav>
+  <main [class.active]="activeSidenav">
     <router-outlet></router-outlet>
   </main>
 </div>
