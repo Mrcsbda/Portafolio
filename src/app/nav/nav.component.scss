@@ -1,0 +1,126 @@
+@import "../shared/variables.scss";
+@import "../shared/texts.scss";
+
+.nav-mobile-container {
+  display: flex;
+  padding: 17px 27px;
+  position: relative;
+  justify-content: center;
+  .nav {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    .open-button {
+      gap: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .line1,
+      .line2,
+      .line3 {
+        padding: 4px;
+        border-radius: 2rem;
+      }
+      .line1,
+      .line3 {
+        background-color: $colorBlue;
+      }
+      .line2 {
+        background-color: $colorGreen;
+      }
+      .line1 {
+        width: 52px;
+      }
+      .line2 {
+        width: 37px;
+      }
+      .line3 {
+        width: 22px;
+      }
+    }
+    .close-button {
+      top: 5px;
+      left: 5px;
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      img {
+        width: 10vw;
+      }
+    }
+    .logo-container {
+      .logo {
+        width: 18vw;
+      }
+    }
+  }
+  .nav-options {
+    top: 115px;
+    padding: 50px;
+    position: absolute;
+    border-radius: 1.5rem;
+    @include texts(1.8rem, black, 600);
+    border: 1px solid rgb(211, 211, 211);
+    ul {
+      gap: 20px;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      flex-direction: column;
+      li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(211, 211, 211);
+
+        &:last-child {
+          padding-bottom: 0px;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+.theme1 {
+  .nav {
+    .open-button {
+      transition: opacity 0.4s;
+    }
+    .close-button {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s;
+      img {
+        visibility: hidden;
+      }
+    }
+  }
+  .nav-options {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s;
+  }
+}
+
+.theme2 {
+  .nav {
+    .open-button {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s;
+    }
+    .close-button {
+      opacity: 1;
+      transition: opacity 0.4s;
+    }
+  }
+  .nav-options {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s;
+  }
+}

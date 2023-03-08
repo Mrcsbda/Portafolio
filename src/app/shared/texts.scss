@@ -1,0 +1,8 @@
+$font: 'Poppins', sans-serif;
+
+@mixin texts($size, $color: black, $weight: normal) {
+    font-size: $size;
+    font-family: $font;
+    color: $color;
+    font-weight: $weight;
+  }
