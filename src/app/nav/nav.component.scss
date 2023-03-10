@@ -57,14 +57,14 @@
     }
   }
   .nav-elements {
-    top: 95px;
+    top: 85px;
     padding: 50px;
+    z-index: 1000;
     position: absolute;
     border-radius: 1.5rem;
+    background-color: white;
     @include texts(1.8rem, black, 600);
     border: 1px solid rgb(211, 211, 211);
-    z-index: 1000;
-    background-color: white;
     ul {
       gap: 20px;
       display: flex;

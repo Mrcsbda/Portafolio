@@ -1,1 +1,14 @@
-<p>skills works!</p>
+<main class="skills-container">
+    <div class="information-container">
+      <h1 class="title"><span>Mis</span> Habilidades</h1>
+      <p class="text">
+        Aquí puedes ver las <span>habilidades, tecnologías y herramientas</span> con las cuales he trabajado.
+      </p>
+      <div class="skills-container">
+        <div class="skill" *ngFor="let skill of skillInformation">
+            <img class="skill-image" [src]="skill.image" [alt]="skill.alt">
+            <p class="skill-name">{{skill.p}}</p>
+        </div>
+      </div>
+    </div>
+  </main>
