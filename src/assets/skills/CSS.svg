@@ -3,16 +3,10 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 704 800" style="enable-background:new 0 0 704 800;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
-	.st1{display:none;fill:#3F3D56;}
-	.st2{fill:none;}
-	.st3{fill:#3F3D56;}
+	.st0{fill:#3F3D56;}
 </style>
-<rect x="100.6" y="108.7" class="st0" width="511.7" height="588.4"/>
-<path class="st1" d="M0,0l64,719l287,81l289-81L704,0H0z M565,234.5H228l7.5,90.5h322l-25,272L353,646.4v0.6h-2l-181-50l-11-139
-	h87.5l6.5,70l98,26.5l98.4-26.5l11-114h-306L131,147h442L565,234.5L565,234.5z"/>
 <g>
-	<path class="st3" d="M569.6,147.1L130.4,147l7.1,87.4l337.6,0.1l-8.6,90.5H245.1l8,85.7h206.1l-12.2,117.5L350,555l-98.5-27
+	<path class="st0" d="M569.6,147.1L130.4,147l7.1,87.4l337.6,0.1l-8.6,90.5H245.1l8,85.7h206.1L447,528.2L350,555l-98.5-27
 		l-6.3-70.4h-87l9.6,128.5L350,642.9l179.1-51L569.6,147.1L569.6,147.1z M0,0h700l-63.6,718.8L349.2,800L63.7,718.7L0,0z"/>
 </g>
 </svg>

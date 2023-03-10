@@ -58,9 +58,9 @@
   }
   .nav-elements {
     top: 85px;
-    padding: 50px;
     z-index: 1000;
     position: absolute;
+    padding: 50px 2.5rem;
     border-radius: 1.5rem;
     background-color: white;
     @include texts(1.8rem, black, 600);

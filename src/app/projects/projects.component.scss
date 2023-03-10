@@ -1,0 +1,106 @@
+@import "../shared/variables.scss";
+@import "../shared/texts.scss";
+
+.projects-container {
+    background-color: white;
+
+    .information-container {
+        .title {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0 0.5rem 0;
+            @include texts(1.9rem, $colorDarkBlue, 700);
+            span {
+                color: $colorPurple;
+            }
+        }
+        .text {
+            padding: 0 2rem;
+            text-align: center;
+            margin-bottom: 0;
+            @include texts(0.8rem, black, 400);
+        }
+    }
+
+    .projects {
+        .project {
+            display: flex;
+            padding: 2rem 0;
+            margin-bottom: 0.8rem;
+            flex-direction: column;
+            justify-content: center;
+            .project-information {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.8rem;
+                flex-direction: column;
+                .project-title {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 0.7rem;
+                }
+                .project-text {
+                    text-align: center;
+                    padding: 0px 0.7rem;
+                    margin-bottom: 1rem;
+                }
+                .icons-container {
+                    margin-bottom: 1rem;
+                    img {
+                        width: 80vw;
+                    }
+                }
+                .buttons-container {
+                    gap: 10px;
+                    display: flex;
+                    margin-bottom: 0.8rem;
+                    a {
+                        border-radius: 1rem;
+                        text-decoration: none;
+                        padding: 0.6rem 1.1rem;
+                    }
+                }
+            }
+            .mockup-project {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 80vw;
+                }
+            }
+        }
+        .p1 {
+            .project-information {
+                .project-title {
+                    @include texts(1.5rem, $colorPurple, 700);
+                }
+                .project-text {
+                    @include texts(0.8rem, black, 400);
+                }
+                .buttons-container {
+                    a {
+                       background-color: $colorDarkBlue;
+                       @include texts(1.2rem, rgb(255, 255, 255), 600);
+                    }
+                }
+            }
+        }
+        .p2 {
+            background-color: $colorDarkBlue;
+            .project-information {
+                .project-title {
+                    @include texts(1.5rem, white, 700);
+                }
+                .project-text {
+                    @include texts(0.8rem, white, 400);
+                }
+                .buttons-container {
+                    a {
+                       background-color: white;
+                       @include texts(1.2rem, $colorDarkBlue, 600);
+                    }
+                }
+            }
+        }
+    }
+}

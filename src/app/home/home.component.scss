@@ -12,20 +12,20 @@
         .title {
             width: 100%;
             text-align: center;
-            margin: 25px 0 0.2rem 0;
-            @include texts(1.6rem, black, 700);
+            margin: 20px 0 0.2rem 0;
+            @include texts(1.8rem, black, 700);
         }
         hr {
             width: 75vw;
             height: 3px;
             border: none;
-            margin-bottom: 0.2rem;
+            margin-bottom: 0.3rem;
             background-color: $colorDarkBlue;
         }
         .subtitle {
             width: 100%;
             text-align: center;
-            @include texts(1rem, $colorBlue, 500);
+            @include texts(1.1rem, $colorBlue, 500);
         }
         .text {
             padding: 0 2rem;

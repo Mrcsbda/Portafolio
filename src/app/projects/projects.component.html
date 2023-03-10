@@ -1,1 +1,28 @@
-<p>projects works!</p>
+<main class="projects-container">
+  <div class="information-container">
+    <h1 class="title"><span>Mis</span> Proyectos</h1>
+    <p class="text">
+      Aquí puedes ver algunos de los proyectos en los que he trabajado.
+    </p>
+  </div>
+  <div class="projects">
+    <div [class]="project.class" *ngFor="let project of projects">
+      <div class="project-information">
+        <h2 class="project-title">{{project.title}}</h2>
+        <p class="project-text">
+        {{project.text}}
+        </p>
+        <div class="icons-container">
+            <img [src]="project.imgTecnologias" alt="icons">
+        </div>
+        <div class="buttons-container">
+            <a [href]="project.demo">Demo</a>
+            <a [href]="project.codigo">Código</a>
+        </div>
+      </div>
+      <div class="mockup-project">
+        <img [src]="project.imgProject" alt="Mockup Project">
+      </div>
+    </div>
+  </div>
+</main>

@@ -3,15 +3,12 @@
 
 .skills-container {
     background-color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 
     .information-container {
         .title {
             width: 100%;
             text-align: center;
-            margin: 25px 0 0.6rem 0;
+            margin: 20px 0 0.6rem 0;
             @include texts(1.9rem, $colorDarkBlue, 700);
             span {
                 color: $colorPurple;
@@ -29,8 +26,8 @@
         .skills-container{
             width: 100%;
             display: flex;
-            flex-direction: row;
             flex-wrap: wrap;
+            flex-direction: row;
             justify-content: center;
             .skill {
                 width: 26%;
@@ -48,5 +45,8 @@
 
             }
         }
+    }
+    .illustration-container {
+        display: none;
     }
 }
