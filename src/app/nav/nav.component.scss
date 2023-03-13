@@ -125,3 +125,36 @@
     transition: opacity 0.5s;
   }
 }
+
+.menu-container {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .nav-mobile-container {
+    display: none;
+  }
+  .menu-container {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      .logo {
+        width: 9vw;
+      }
+    }
+    .menu-elements {
+      ul {
+        display: flex;   
+        gap: 0.7rem;
+        li {
+          list-style: none;
+          @include texts(1.2rem, black, 700);
+        }   
+      }
+    }
+  }
+}

@@ -28,3 +28,20 @@
     </ul>
   </div>
 </div>
+
+<div class="menu-container">
+  <div class="logo-container">
+    <img class="logo" src="../../assets/nav/logo.svg" alt="logo" />
+  </div>
+  <div class="menu-elements">
+    <ul>
+      <li
+        *ngFor="let item of elements"
+        [routerLink]="item.route"
+        (click)="close()"
+      >
+        {{ item.label }}
+      </li>
+    </ul>
+  </div>
+</div>

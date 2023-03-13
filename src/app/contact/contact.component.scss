@@ -2,6 +2,9 @@
 @import "../shared/texts.scss";
 
 .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .form-container {
         display: flex;
         margin-bottom: 1rem;
