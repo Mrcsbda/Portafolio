@@ -1,0 +1,66 @@
+@import "../shared/variables.scss";
+@import "../shared/texts.scss";
+
+.contact-container {
+    .form-container {
+        display: flex;
+        margin-bottom: 1rem;
+        flex-direction: column;
+        .title {
+            width: 100%;
+            text-align: center;
+            margin: 0.8rem 0 0.5rem 0;
+            @include texts(1.9rem, $colorPurple, 700);
+        }
+        hr {
+            width: 70vw;
+            height: 4px;
+            border: none;
+            margin-left: 1.7rem;
+            background-color: $colorBlue;
+        }
+        form {
+            gap: 0.9rem; 
+            display: flex;
+            margin: 1.2rem 0;
+            flex-direction: column;
+            padding: 0.5rem 1.9rem;
+            
+            input, textarea {
+                width: 80vw;
+                outline: none;
+                border-radius: 1rem;
+                padding:  0.6rem 1.1rem;
+                border: 1px solid $colorBlue;
+                @include texts(1rem, $colorPurple, 500);
+
+                &:focus {
+                    outline: 1px solid $colorDarkBlue;
+                }
+                &:focus::placeholder {
+                    color: $colorDarkBlue;
+                }
+            }
+            textarea {
+                resize: none;
+                height: 10rem;
+              }
+            button {
+                padding: 0.6rem 1.1rem;
+                background-color: $colorBlue;
+                width: 50%;
+                border: none;
+                border-radius: 1rem;
+                @include texts(1.2rem, rgb(255, 255, 255), 600);
+            }
+        }
+    }
+    .illustration-container {
+        display: flex;
+        margin-bottom: 3rem;
+        justify-content: center;
+        img {
+            width: 75vw;
+        }
+    }
+}

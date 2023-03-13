@@ -2,7 +2,6 @@
 @import "../shared/texts.scss";
 
 .home-container {
-    background-color:white;
     .information-container {
         display: flex;
         align-items: center;
@@ -12,7 +11,7 @@
         .title {
             width: 100%;
             text-align: center;
-            margin: 20px 0 0.2rem 0;
+            margin: 0.8rem 0 0.2rem 0;
             @include texts(1.8rem, black, 700);
         }
         hr {
@@ -25,13 +24,14 @@
         .subtitle {
             width: 100%;
             text-align: center;
-            @include texts(1.1rem, $colorBlue, 500);
+            margin-bottom: 0.5rem;
+            @include texts(1.2rem, $colorBlue, 500);
         }
         .text {
             padding: 0 2rem;
             text-align: center;
             margin-bottom: 1.7rem;
-            @include texts(0.8rem, black, 400);
+            @include texts(0.9rem, black, 400);
             span {
                 color: $colorBlue;
             }
