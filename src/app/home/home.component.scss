@@ -94,7 +94,7 @@
 @media (min-width: 1024px) {
     .home-container {
         display: flex;
-        margin-top: 4rem;
+        margin-top: 3rem;
         flex-direction: row-reverse;
         justify-content: space-around;
         .information-container {
@@ -104,7 +104,7 @@
             .title {
                 text-align: left;
                 margin-bottom: 0.6rem;
-                @include texts(3rem, black, 700);
+                @include texts(2.8rem, black, 700);
             }
             hr {
                 width: 35rem;
@@ -114,26 +114,27 @@
             .subtitle {
                 text-align: left;
                 margin-bottom: 2rem;
-                @include texts(2rem, $colorBlue, 500);
+                @include texts(1.8rem, $colorBlue, 500);
             }
             .text {
                 text-align: left;
                 line-height: 2rem;
                 padding: 0 1.7rem 0 0;
-                @include texts(1.5rem, black, 400);
+                @include texts(1.3rem, black, 400);
             }
             .social-media-icons {
                 a {
                     img {
-                        width: 4.5rem;
+                        width: 4rem;
                     }
                 }
             }
         }
         .illustration-container {
-            margin-left: 9vw;
+            margin-left: 7vw;
+            margin-bottom: 0;
             img {
-                width: 100%;
+                width: 85%;
             }
         }
     }
