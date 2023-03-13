@@ -13,8 +13,10 @@
             }
         }
         .text {
+            
             padding: 0 2rem;
             text-align: center;
+            line-height: 1.2rem;
             margin-bottom: 1.7rem;
             @include texts(0.9rem, black, 400);
             span {
@@ -46,5 +48,33 @@
     }
     .illustration-container {
         display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .skills-container {
+        .information-container {
+            .title {
+                @include texts(2rem, $colorDarkBlue, 700);
+            }
+            .text {
+                padding: 0 3rem;
+                @include texts(1.1rem, black, 400);
+            }
+            .skills-container{
+                padding: 0 3rem;
+                .skill {
+                    width: 18%;
+                    .skill-image {
+                        width: 11vw;
+                    }
+                    .skill-name {
+                        text-align: center;
+                        @include texts(1rem,$colorPurple, 600);
+                    }
+    
+                }
+            }
+        }
     }
 }

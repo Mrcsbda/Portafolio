@@ -14,8 +14,9 @@
         }
         .text {
             padding: 0 2rem;
-            text-align: center;
             margin-bottom: 0;
+            text-align: center;
+            line-height: 1.2rem;
             @include texts(0.9rem, black, 400);
         }
     }
@@ -38,6 +39,7 @@
                 }
                 .project-text {
                     text-align: center;
+                    line-height: 1.2rem;
                     padding: 0px 0.9rem;
                     margin-bottom: 1rem;
                 }
@@ -48,7 +50,7 @@
                     }
                 }
                 .buttons-container {
-                    gap: 10px;
+                    gap: 1rem;
                     display: flex;
                     margin-bottom: 0.8rem;
                     a {
@@ -95,6 +97,80 @@
                     a {
                        background-color: white;
                        @include texts(1.2rem, $colorDarkBlue, 600);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .projects-container {
+        .information-container {
+            .title {
+                @include texts(2rem, $colorDarkBlue, 700);
+            }
+            .text {
+                @include texts(1.1rem, black, 400);
+            }
+        }
+        .projects {
+            .project {
+                .project-information {
+                    .project-text {
+                        padding: 0px 1rem;
+                        line-height: 1.5rem;
+                    }
+                    .icons-container {
+                        img {
+                            width: 18rem;
+                        }
+                    }
+                    .buttons-container {
+                        gap: 1rem;
+                        a {
+                            border-radius: 1rem;
+                            text-decoration: none;
+                            padding: 0.9rem 1.5rem;
+                        }
+                    }
+                }
+                .mockup-project {
+                    img {
+                        width: 50vw;
+                    }
+                }
+            }
+            .p1 {
+                .project-information {
+                    .project-title {
+                        @include texts(1.9rem, $colorPurple, 700);
+                    }
+                    .project-text {
+                        @include texts(1.1rem, black, 400);
+                    }
+                    .buttons-container {
+                        a {
+                           background-color: $colorDarkBlue;
+                           @include texts(1.4rem, rgb(255, 255, 255), 600);
+                        }
+                    }
+                }
+            }
+            .p2 {
+                background-color: $colorDarkBlue;
+                .project-information {
+                    .project-title {
+                        @include texts(1.9rem, white, 700);
+                    }
+                    .project-text {
+                        @include texts(1.1rem, white, 400);
+                    }
+                    .buttons-container {
+                        a {
+                           background-color: white;
+                           @include texts(1.4rem, $colorDarkBlue, 600);
+                        }
                     }
                 }
             }

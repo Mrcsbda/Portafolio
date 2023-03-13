@@ -30,6 +30,7 @@
         .text {
             padding: 0 2rem;
             text-align: center;
+            line-height: 1.2rem;
             margin-bottom: 1.7rem;
             @include texts(0.9rem, black, 400);
             span {
@@ -60,23 +61,79 @@
 @media (min-width: 600px) {
     .home-container {
         .information-container {
+            .title {
+                @include texts(1.9rem, black, 700);
+            }
             hr {
-                width: 55vw;
+                width: 60vw;
+            }
+            .subtitle {
+                @include texts(1.3rem, $colorBlue, 500);
             }
             .text {
                 padding: 0 3rem;
+                line-height: 1.5rem;
+                @include texts(1.1rem, black, 400);
             }
             .social-media-icons {
                 a {
                     img {
-                        width: 10vw;
+                        width: 8vw;
                     }
                 }
             }
         }
         .illustration-container {
             img {
-                width: 40vw;
+                width: 30vw;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-container {
+        display: flex;
+        margin-top: 4rem;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        .information-container {
+            width: 50%;
+            align-items: flex-start;
+            padding: 0 1.1rem 0 0;
+            .title {
+                text-align: left;
+                margin-bottom: 0.6rem;
+                @include texts(3rem, black, 700);
+            }
+            hr {
+                width: 35rem;
+                height: 4pxx;
+                margin-bottom: 0.8rem;
+            }
+            .subtitle {
+                text-align: left;
+                margin-bottom: 2rem;
+                @include texts(2rem, $colorBlue, 500);
+            }
+            .text {
+                text-align: left;
+                line-height: 2rem;
+                padding: 0 1.7rem 0 0;
+                @include texts(1.5rem, black, 400);
+            }
+            .social-media-icons {
+                a {
+                    img {
+                        width: 4.5rem;
+                    }
+                }
+            }
+        }
+        .illustration-container {
+            margin-left: 9vw;
+            img {
+                width: 100%;
             }
         }
     }
