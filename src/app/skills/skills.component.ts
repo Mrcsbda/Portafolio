@@ -11,12 +11,12 @@ export class SkillsComponent {
     {
       image: '../../assets/skills/HTML.svg',
       alt: 'HTML5',
-      p: 'HTML 5'
+      p: 'HTML5'
     },
     {
       image: '../../assets/skills/CSS.svg',
       alt: 'CSS3',
-      p: 'CSS 3'
+      p: 'CSS3'
     },
     {
       image: '../../assets/skills/JavaScript.svg',

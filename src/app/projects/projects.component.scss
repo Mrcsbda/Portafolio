@@ -130,7 +130,6 @@
                         gap: 1rem;
                         a {
                             border-radius: 1rem;
-                            text-decoration: none;
                             padding: 0.9rem 1.5rem;
                         }
                     }
@@ -173,6 +172,52 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects-container {
+        .information-container {
+            .title {
+                margin-bottom: 1rem;
+                @include texts(2.5rem, $colorDarkBlue, 700);
+            }
+            .text {
+                @include texts(1.3rem, black, 400);
+            }
+        }
+        .projects {
+            .project {
+                padding: 2rem 0;
+                flex-direction: row;
+                align-items: center;
+                .project-information {
+                    .project-title {
+                        font-size: 2rem;
+                    }
+                    .project-text {
+                        line-height: 1.5rem;
+                        font-size: 1.2rem;
+                    }
+                    width: 50%;
+                    .buttons-container {
+                        a {
+                            border-radius: 1.2rem;
+                            padding: 0.7rem 1.5rem;
+                        }
+                    }
+                }
+                .mockup-project {
+                    width: 35%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .p2 {
+                flex-direction: row-reverse;
             }
         }
     }

@@ -94,9 +94,10 @@
 @media (min-width: 1024px) {
     .home-container {
         display: flex;
-        margin-top: 3rem;
+        align-items: center;
         flex-direction: row-reverse;
         justify-content: space-around;
+        height: calc(100vh - 88.563px);
         .information-container {
             width: 50%;
             align-items: flex-start;

@@ -78,3 +78,52 @@
         }
     }
 }
+
+@media (min-width: 1024px) {
+    .skills-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        height: calc(100vh - 88.563px);
+        .information-container {
+            width: 55%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .title {
+                margin-bottom: 1rem;
+                @include texts(2.5rem, $colorDarkBlue, 700);
+            }
+            .text {
+                line-height: 1.8rem;
+                @include texts(1.3rem, black, 400);
+            }
+            .skills-container{
+                gap: 1rem;
+                width: 80%;
+                padding: 0 3rem;
+                height: min-content;
+                .skill {
+                    width: min-content;
+                    .skill-image {
+                        width: 4vw;
+                    }
+                    .skill-name {
+                        text-align: center;
+                        @include texts(0.9rem,$colorPurple, 600);
+                    }
+    
+                }
+            }
+        }
+        .illustration-container {
+            display: flex;
+            margin-right: 3vw;
+            justify-content: right;
+            img {
+                width: 80%;
+            }
+        } 
+    }
+}
