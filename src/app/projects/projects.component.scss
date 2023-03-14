@@ -206,6 +206,9 @@
                         a {
                             border-radius: 1.2rem;
                             padding: 0.7rem 1.5rem;
+                            &:hover {
+                                opacity: 0.8;
+                            }
                         }
                     }
                 }
