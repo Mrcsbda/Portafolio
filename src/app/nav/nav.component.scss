@@ -167,15 +167,15 @@
     padding: 1.5rem 2.5rem 0.5rem 1.5rem;
     .logo-container {
       .logo {
-        width: 5rem;
+        width: 6rem;
       }
     }
     .menu-elements {
       ul { 
         margin-right: 1rem;
-        gap: 1rem;
+        gap: 1.5rem;
         li {
-          @include texts(1.6rem, black, 700);
+          @include texts(1.7rem, black, 700);
           hr {
             width: 0;
             height: 4px;

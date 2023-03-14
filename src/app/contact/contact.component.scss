@@ -81,8 +81,7 @@
             hr {
                 width: 35vw;
             }
-            form {
-                align-items: center;          
+            form {          
                 input, textarea {
                     width: 40vw;
                     @include texts(1.1rem, $colorPurple, 500);
@@ -98,6 +97,47 @@
             justify-content: center;
             img {
                 width: 40vw;
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .contact-container {
+        justify-content: center;
+        height: calc(100vh - 88.563px);
+        .form-container {
+            width: 40%;
+            .title {
+                width: 27rem;
+                text-align: right;
+                @include texts(2.5rem, $colorPurple, 700);
+            }
+            hr {
+                width: 19rem;
+            }
+            form {         
+                input, textarea {
+                    width: 27rem;
+                    @include texts(1.3rem, $colorPurple, 500);
+                }
+                button {
+                    @include texts(1.5rem, rgb(255, 255, 255), 600);
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .illustration-container {
+            width: 40%;
+            display: flex;
+            margin: 0 4rem 0 0;
+            justify-content: right;
+            img {
+                width: 30rem;
             }
         }
     }
