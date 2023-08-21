@@ -1,0 +1,39 @@
+@import "../../assets/styles/variables.scss";
+
+.header {
+    &__nav-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7rem;
+    }
+
+    &__nav-item {
+        width: 100%;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-family: $quicksand-font;
+    }
+
+    &__parting-line {
+        width: 100%;
+        border: 1px solid $gray;
+        border-bottom: none;
+        margin-top: 0.7rem;
+    }
+}
+
+.hr-3 {
+    display: none;
+}
+
+.active {
+    font-weight: 700;
+}

@@ -1,0 +1,42 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.home {
+    &__information-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: $quicksand-font;
+    }
+
+    &__title {
+        @include text(black, 2rem, 600);
+        margin-bottom: 0.3rem;
+    }
+
+    &__parting-line {
+        width: 70%;
+        border: 1px solid $verdigris;
+        margin-bottom: 0.3rem;
+    }
+
+    &__subtitle {
+        @include text($dark-cyan, 1.2rem);
+    }
+
+    &__text {
+        text-align: justify;
+        padding: 1rem 2.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    &__icons-container {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__social-networks-icon {
+        filter: invert(76%) sepia(10%) saturate(1493%) hue-rotate(132deg) brightness(85%) contrast(88%);
+    }
+}

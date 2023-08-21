@@ -1,0 +1,91 @@
+@import "../../assets/styles/mixins.scss";
+@import "../../assets/styles/variables.scss";
+
+.projects {
+    &__information-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.7rem;
+    }
+
+    &__subtitle {
+        margin-bottom: 1rem;
+        text-align: center;
+        padding: 0 0.5rem
+    }
+
+    &__description {
+        text-align: justify;
+        padding: 0 2rem;
+        margin-bottom: 1.2rem
+    }
+
+    &__technologies-container {
+        display: flex;
+        gap: 0.4rem;
+        justify-content: center;
+    }
+
+    &__technology {
+        width: 2.5rem;
+    }
+
+    &__project-image {
+        width: 20rem;
+    }
+
+    &__btns-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.3rem;
+    }
+
+    &__btn {
+        text-decoration: none;
+        padding: 0.5rem 1.2rem;
+        border-radius: 1rem;
+        font-weight: 700;
+    }
+}
+
+.theme-white {
+    &__subtitle {
+        @include text($english-violet, 1.8rem, 700);
+    }
+
+    &__technology {
+        filter: invert(22%) sepia(10%) saturate(1639%) hue-rotate(205deg) brightness(97%) contrast(88%);
+    }
+
+    &__btn {
+        background-color: $dark-cyan;
+        color: white;
+    }
+}
+
+.theme-blue {
+    &__information-container {
+       background-color: $dark-cyan;
+       padding: 2rem;
+    }
+
+    &__subtitle {
+        @include text(white, 1.8rem, 700);
+    }
+
+    &__description {
+        color: white;;
+    }
+
+    &__technology {
+        filter: invert(99%) sepia(0%) saturate(7498%) hue-rotate(222deg) brightness(101%) contrast(102%);
+    }
+
+    &__btn {
+        background-color: white;
+        color: $dark-cyan;
+    }
+}

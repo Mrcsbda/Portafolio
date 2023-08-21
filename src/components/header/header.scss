@@ -1,0 +1,61 @@
+@import "../../assets/styles/variables.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: relative;
+
+    &__logo-container {
+        display: flex;
+    }
+
+    &__logo {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &__btn-mobile {
+        background-color: white;
+        border: none;
+        display: flex;
+    }
+
+    &__menu-icon, &__close-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &__menu-icon {
+        filter: invert(76%) sepia(10%) saturate(1493%) hue-rotate(132deg) brightness(85%) contrast(88%);
+    }
+
+    &__mobile-menu {
+        z-index: 100;
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 80px);
+        top: 80px;
+        left: 0;
+        backdrop-filter: blur(1px);
+        display: flex;
+        justify-content: center;
+        padding-top: 0.5rem;
+    }
+
+    &__nav-container {
+        background-color: white;
+        border: 1px solid $gray;
+        height: max-content;
+        padding: 1.5rem;
+        border-radius: 10px;
+        color: black;
+        width: 45vw;
+    }
+}
+
+.hidden {
+    display: none;
+}

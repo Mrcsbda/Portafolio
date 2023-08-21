@@ -1,0 +1,24 @@
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.projects {
+    font-family: $quicksand-font;
+
+    &__title {
+        @include text($dark-cyan, 2rem, 600);
+        margin-bottom: 0.4rem;
+        text-align: center;
+
+        span {
+            color: $english-violet;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        padding: 0 1.3rem;
+        span {
+            color: $dark-cyan;
+        }
+    }
+}

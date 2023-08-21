@@ -1,0 +1,11 @@
+.home {
+    &__illustration-container{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__illustration {
+        width: 80%;
+    }
+}
