@@ -28,8 +28,9 @@
 
     &__skills-icons-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1.1fr);
         place-content: center;
+        gap: 0.3rem;
     }
 
     &__skill-icon-container {
