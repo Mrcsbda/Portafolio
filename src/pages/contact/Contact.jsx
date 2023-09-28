@@ -19,7 +19,7 @@ const Contact = () => {
           <label htmlFor="message">¡Deja tu mensaje!</label>
           <textarea id="message"></textarea>
         </div>
-        <button type='submit'>Enviar</button>
+        <button type='submit' className='contact__btn'>Enviar</button>
       </form>
       <figure className='contact__illustration-container'>
         <img src="" alt="" />

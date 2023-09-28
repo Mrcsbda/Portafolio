@@ -6,7 +6,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.7rem;
+        gap: 1rem;
+
+        li:last-child hr {
+            display: none;
+        }
     }
 
     &__nav-item {
@@ -20,6 +24,7 @@
         width: 100%;
         display: block;
         font-family: $quicksand-font;
+        font-size: 18px;
     }
 
     &__parting-line {
@@ -30,10 +35,42 @@
     }
 }
 
-.hr-3 {
-    display: none;
-}
-
 .active {
     font-weight: 700;
+}
+
+@media screen and (min-width: 602px) {
+    .header {
+        &__nav-list {
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+
+            li hr {
+                visibility: hidden;
+                display: flex !important;
+                position: absolute;
+                width: 0;
+                bottom: -5px;
+                left: 0;
+                height: 1px;
+                border: none;
+                border-bottom: 1.5px solid $verdigris;
+            }
+        }
+
+        &__nav-item {
+            position: relative;
+
+            &:hover hr {
+                visibility: visible;
+                transition: all 0.2s ease;
+                width: 60%;
+            }
+        }
+    }
+
+    .active {
+        color: $dark-cyan;
+    }
 }

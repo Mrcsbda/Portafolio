@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom"
 import "./nav.scss"
 
-const Nav = ({handleMobileMenu}) => {
+const Nav = ({handleMobileMenu, desktopMenu}) => {
     const menu = [
         {
-            path: "/",
+            path: "",
             name: "Inicio"
         },
         {
@@ -26,10 +26,10 @@ const Nav = ({handleMobileMenu}) => {
             {
                 menu.map((item, i) => (
                     <li className="header__nav-item" key={i}>
-                        <NavLink to={item.path}
+                        <NavLink to={`/${item.path}`}
                         className="header__link"
-                        onClick={()=> handleMobileMenu(false)}>{item.name}</NavLink>
-                        <hr className={`header__parting-line hr-${i}`}/>
+                        onClick={()=> !desktopMenu && handleMobileMenu(false)}>{item.name}</NavLink>
+                        <hr className={`header__parting-line`}/>
                     </li>
                 ))
             }

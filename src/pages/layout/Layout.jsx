@@ -6,7 +6,7 @@ import { useState } from 'react'
 const Layout = () => {
   const [menuMobileActive, setMenuMobileActive] = useState(false)
   return (
-    <div>
+    <div className={`layout ${menuMobileActive ? "layout__fixed" : ""}`}>
       <Header setMenuMobileActive={setMenuMobileActive}/>
       <Outlet />
     </div>

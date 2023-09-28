@@ -5,6 +5,7 @@ import menu from "/icons/menu.svg"
 import close from "/icons/close.svg"
 import Nav from '../nav/Nav'
 import 'animate.css';
+import { Link } from 'react-router-dom'
 
 const Header = ({ setMenuMobileActive }) => {
 
@@ -53,7 +54,9 @@ const Header = ({ setMenuMobileActive }) => {
   return (
     <header className='header'>
       <figure className='header__logo-container'>
-        <img src={logo} alt="logo icon" className='header__logo' />
+        <Link to="/">
+          <img src={logo} alt="logo icon" className='header__logo' />
+        </Link>
       </figure>
       <button
         className={btnMobile ? "header__btn-mobile" : "hidden"}
@@ -67,11 +70,11 @@ const Header = ({ setMenuMobileActive }) => {
       </button>
       <section className={mobileMenu ? "header__mobile-menu" : "hidden"}>
         <nav className="header__nav-container">
-          <Nav handleMobileMenu={handleMobileMenu} />
+          <Nav handleMobileMenu={handleMobileMenu} desktopMenu={desktopMenu} />
         </nav>
       </section>
       <section className={desktopMenu ? "header__desktop-menu" : "hidden"}>
-        <Nav />
+        <Nav handleMobileMenu={handleMobileMenu} desktopMenu={desktopMenu} />
       </section>
     </header>
   )
