@@ -9,3 +9,11 @@
         width: 80%;
     }
 }
+
+@media screen and (min-width: 602px) {
+    .home {
+        &__illustration {
+            width: 55%;
+        }
+    }
+}

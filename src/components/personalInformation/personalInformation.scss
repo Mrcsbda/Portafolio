@@ -40,3 +40,25 @@
         filter: invert(76%) sepia(10%) saturate(1493%) hue-rotate(132deg) brightness(85%) contrast(88%);
     }
 }
+
+@media screen and (min-width: 602px) {
+    .home {
+        &__title {
+            @include text(black, 2.2rem, 600);
+        }
+
+        &__parting-line {
+            width: 60%;
+        }
+
+        &__icons-container {
+            a img {
+                width: 4rem;
+            }
+        }
+
+        &__social-networks-icon {
+            filter: invert(76%) sepia(10%) saturate(1493%) hue-rotate(132deg) brightness(85%) contrast(88%);
+        }
+    }
+}
