@@ -74,3 +74,12 @@
         color: $dark-cyan;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .header {
+        padding-right: 3rem;
+        &__link {
+            font-size: 1.2rem;
+        }
+    }
+}

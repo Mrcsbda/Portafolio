@@ -14,10 +14,6 @@ const Nav = ({handleMobileMenu, desktopMenu}) => {
         {
             path: "proyectos",
             name: "Proyectos"
-        },
-        {
-            path: "contacto",
-            name: "Contacto"
         }
     ]
 

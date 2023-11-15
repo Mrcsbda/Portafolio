@@ -13,7 +13,21 @@
 @media screen and (min-width: 602px) {
     .home {
         &__illustration {
-            width: 55%;
+            width: 55vw;
+            max-width: 400px;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+
+        &__illustration-container{
+           width: max-content;
         }
     }
 }
