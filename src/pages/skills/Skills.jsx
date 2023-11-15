@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <main className='skills'>
       <figure className='skills__illustration-container'>
-        <img className='' src="" alt="illustration image" />
+        <img className='' src="./images/skills-illustration.svg" alt="illustration image" />
       </figure>
       <SkillsInformation/>
     </main>

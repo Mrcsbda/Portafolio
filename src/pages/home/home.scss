@@ -14,7 +14,7 @@
     .home {
         &__illustration {
             width: 55vw;
-            max-width: 400px;
+            max-width: 300px;
         }
     }
 }
@@ -28,6 +28,11 @@
 
         &__illustration-container{
            width: max-content;
+        }
+        
+        &__illustration {
+            width: 55vw;
+            max-width: 400px;
         }
     }
 }
