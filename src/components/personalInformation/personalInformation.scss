@@ -90,3 +90,16 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .home {
+        &__text {
+            font-size: 1.2rem;
+        }
+
+        &__icons-container {
+            gap: 1rem;
+            padding-left: 2.7rem;
+        }
+    }
+}

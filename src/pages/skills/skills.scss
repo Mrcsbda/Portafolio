@@ -3,3 +3,16 @@
         display: none;
     }
 }
+
+@media screen and (min-width: 1000px) {
+    .skills {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__illustration-container {
+            display: flex;
+            width: 40vw;
+            max-width: 430px;
+        }
+    }
+}

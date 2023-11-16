@@ -28,7 +28,7 @@
 
     &__skills-icons-container {
         display: grid;
-        grid-template-columns: repeat(3, 1.1fr);
+        grid-template-columns: repeat(3, auto);
         place-content: center;
         gap: 0.3rem;
     }
@@ -48,5 +48,61 @@
 
     &__skill-name {
         @include text($english-violet, 1rem, 600);
+    }
+}
+
+@media screen and (min-width: 602px) {
+    .skills {
+        &__title {
+            font-size: 2.2rem;
+            margin-bottom: 0.4rem;
+        }
+
+        &__text {
+            font-size: 1.13rem;
+            max-width: 450px;
+            span {
+                font-weight: 500;
+            }
+        }
+
+        &__skills-icons-container {
+            grid-template-columns: repeat(4, auto);
+            place-content: center;
+            column-gap: 0.6rem;
+            row-gap: 0.1rem;
+        }
+
+        &__skill-icon-container {
+            gap: 0.5rem;
+        }
+
+        &__skill-name {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .skills {
+        &__title {
+            margin-bottom: 0.6rem;
+        }
+
+        &__text {
+            font-size: 1.2rem;
+        }
+
+        &__skill-icon-container {
+            gap: 0.5rem;
+        }
+
+        &__skill-icon {
+            width: 5rem;
+        }
+
+        &__skill-name {
+            font-size: 1.2rem;
+        }
     }
 }

@@ -29,10 +29,18 @@
         &__illustration-container{
            width: max-content;
         }
-        
+
         &__illustration {
             width: 55vw;
             max-width: 400px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .home {
+        &__illustration {
+            max-width: 430px;
         }
     }
 }
