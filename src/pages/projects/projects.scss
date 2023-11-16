@@ -3,6 +3,9 @@
 
 .projects {
     font-family: $quicksand-font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__title {
         @include text($dark-cyan, 2rem, 600);
@@ -17,8 +20,22 @@
     &__text {
         text-align: center;
         padding: 0 1.3rem;
+
         span {
             color: $dark-cyan;
         }
     }
+}
+
+@media screen and (min-width: 602px) {
+    .projects {
+        &__title {
+            font-size: 2.2rem;
+        }
+
+        &__text {
+            font-size: 1.13rem;
+        }
+    }
+
 }
