@@ -11,7 +11,7 @@ const PersonalInformation = () => {
       <h2 className='home__subtitle'>Desarrolladora Front End</h2>
       <p className='home__text'>
         Hola! Soy Mariana, una apasionada por la tecnología y la innovación, con conocimientos en HTML
-        | CSS | JavaScript | React | Redux y manejo de versiones en la plataforma Github.<br /><br />
+        | CSS | Sass | JavaScript | TypeScript | Angular | React | Redux y manejo de versiones en la plataforma Github.<br /><br />
 
         Mi formación académica se basa en una técnica en diseño e integración de multimedia, respaldada
         por un Bootcamp de la corporación Makaia especializado en Desarrollo Front End.<br /><br />

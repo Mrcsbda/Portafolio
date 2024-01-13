@@ -2,7 +2,7 @@ import React from 'react'
 import "./skillsInformation.scss"
 
 const SkillsInformation = () => {
-    const skills = ["Html", "Css", "JavaScript", "Sass", "React", "Redux", "Firebase", "Git", "GitHub", "Illustrator"]
+    const skills = ["Html", "Css", "JavaScript", "TypeScript", "Sass", "Angular", "React", "Redux", "Firebase", "Git", "GitHub", "Illustrator"]
     return (
         <article className='skills__information-container'>
             <h1 className='skills__title'><span>Mis</span> Habilidades</h1>
